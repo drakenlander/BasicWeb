@@ -1,62 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Javier León">
+        <title>Mueblería Masatepe</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Durán G.">
-    <title>UAM</title>
-    <link rel="stylesheet" href="css/styles.css">
-
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <img src="img/logo.jpg" alt="logo" id="logo">
-            <h1>Mueblería Masatepe</h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <!-- Formulario de contacto -->
-            <h2>Contacto</h2>
-            <div class="contacto">
-                <form action="enviar.php" method="post">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                    <br>
-                    <label for="correo">Correo:</label>
-                    <input type="email" name="correo" id="correo" required>
-                    <br>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" required></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                </form>
+    <body style="background-color: lightblue;">
+        <header>
+            <div class="container">
+                <h1>Mueblería Masatepe</h1>
             </div>
-        </section>
-        <!-- barra lateral -->
-        <aside>
-            <h2>Redes Sociales</h2>
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank">
-                        Facebook</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-            </ul>
-    </main>
-    <footer>
-        <p>&copy; 2024 Mueblería Masatepe</p>
-    </footer>
-</body>
+            <div style="max-width: 1000px; margin: auto; padding-bottom: 25px;">
+                <nav>
+                    <ul>
+                        <li style="margin-right: 150px;"><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li style="margin-left: 150px;"><a>Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
+        <main>
+            <section style="margin: auto;">
+                <!-- Formulario de contacto -->
+                <h2>Contacto</h2>
+                <div id="feedback-form">
+                    <div>
+                      <form>
+                        <input type="text" name="nombre" placeholder="Nombre"></input>
+                        <input type="text" name="email" placeholder="Email"></input>
+                        <button style="background-color: lightblue;" type="submit">Enviar</button>
+                      </form>
+                    </div>
+                  </div>
+                  <br>
+            </section>
+            <br>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Mueblería Masatepe</p>
+        </footer>
+    </body>
 </html>
