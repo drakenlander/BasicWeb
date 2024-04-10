@@ -93,10 +93,13 @@ nav a:hover {
   transform: scale(1.25);
 }
 
+.link_hover {
+  transition: transform 0.15s ease-out 100ms;
+}
+
 .link_hover:hover {
   cursor: pointer;
   transform: scale(1.25);
-  transition: transform 0.15s ease-out 100ms;
 }
 
 /* clase container -  todo en la misma linea centrado vertical y horizontal*/
